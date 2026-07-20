@@ -1,0 +1,58 @@
+<svg viewBox="0 0 780 190" width="780" height="190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GitHub trophies">
+  <defs>
+    <linearGradient id="bgG3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0c28"/>
+      <stop offset="100%" stop-color="#1b0b32"/>
+    </linearGradient>
+    <filter id="tglow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="shine2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .card3 { fill:url(#bgG3); stroke:#4b3fa0; stroke-width:1.2; }
+    .trophy-cell { opacity:0; transform:scale(0.6); animation: popCell .55s cubic-bezier(.34,1.56,.64,1) forwards; }
+    @keyframes popCell { to { opacity:1; transform:scale(1); } }
+    .trophy-rank { font-family:'Segoe UI',Arial,sans-serif; font-size:22px; font-weight:800; text-anchor:middle; }
+    .trophy-label { font-family:'Segoe UI',Arial,sans-serif; font-size:12px; fill:#c9c3f0; text-anchor:middle; }
+    .trophy-ring { animation: ringPulse 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes ringPulse { 0%,100% { opacity:0.7; } 50% { opacity:1; } }
+  </style>
+  <rect class="card3" x="1" y="1" width="778" height="188" rx="14"/>
+  <g class="trophy-cell" style="animation-delay:0.00s" transform="translate(65,95.0)">
+      <circle r="46" fill="none" stroke="#ff2d95" stroke-width="3" class="trophy-ring" filter="url(#tglow)"/>
+      <circle r="46" fill="#150f30"/>
+      <text class="trophy-rank" y="6" fill="#ff2d95">S</text>
+      <text class="trophy-label" y="66">Commits</text>
+    </g><g class="trophy-cell" style="animation-delay:0.15s" transform="translate(195,95.0)">
+      <circle r="46" fill="none" stroke="#4facfe" stroke-width="3" class="trophy-ring" filter="url(#tglow)"/>
+      <circle r="46" fill="#150f30"/>
+      <text class="trophy-rank" y="6" fill="#4facfe">A+</text>
+      <text class="trophy-label" y="66">Stars</text>
+    </g><g class="trophy-cell" style="animation-delay:0.30s" transform="translate(325,95.0)">
+      <circle r="46" fill="none" stroke="#8a2be2" stroke-width="3" class="trophy-ring" filter="url(#tglow)"/>
+      <circle r="46" fill="#150f30"/>
+      <text class="trophy-rank" y="6" fill="#8a2be2">A</text>
+      <text class="trophy-label" y="66">PRs</text>
+    </g><g class="trophy-cell" style="animation-delay:0.45s" transform="translate(455,95.0)">
+      <circle r="46" fill="none" stroke="#00d4a0" stroke-width="3" class="trophy-ring" filter="url(#tglow)"/>
+      <circle r="46" fill="#150f30"/>
+      <text class="trophy-rank" y="6" fill="#00d4a0">B+</text>
+      <text class="trophy-label" y="66">Repos</text>
+    </g><g class="trophy-cell" style="animation-delay:0.60s" transform="translate(585,95.0)">
+      <circle r="46" fill="none" stroke="#ffb020" stroke-width="3" class="trophy-ring" filter="url(#tglow)"/>
+      <circle r="46" fill="#150f30"/>
+      <text class="trophy-rank" y="6" fill="#ffb020">B</text>
+      <text class="trophy-label" y="66">Followers</text>
+    </g><g class="trophy-cell" style="animation-delay:0.75s" transform="translate(715,95.0)">
+      <circle r="46" fill="none" stroke="#ff6fb0" stroke-width="3" class="trophy-ring" filter="url(#tglow)"/>
+      <circle r="46" fill="#150f30"/>
+      <text class="trophy-rank" y="6" fill="#ff6fb0">A</text>
+      <text class="trophy-label" y="66">Experience</text>
+    </g>
+</svg>
